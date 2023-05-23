@@ -1,0 +1,202 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin:0;
+  
+  }
+  
+  h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:300;
+    letter-spacing: 2px;
+    font-size:48px;
+    color: #ffffff;
+  }
+  p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size:14px;
+    color: #333333;
+  }
+  
+  .header {
+    position:relative;
+    text-align:center;
+    background-image: url(WhatsApp\ Image\ 2023-05-22\ at\ 4.18.14\ PM.jpeg);
+    color:white;
+  }
+  .logo {
+    width:50px;
+    fill:white;
+    padding-right:15px;
+    display:inline-block;
+    vertical-align: middle;
+  }
+  
+  .inner-header {
+    height:65vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .flex { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; 
+    min-height:100px;
+    max-height:150px;
+  }
+  
+  .content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: white;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+
+.btn{  
+  border-radius: 4px;
+  height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition : all 200ms linear;
+  transition: all 200ms linear;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  align-items: center;
+  background-color: #007bff;
+  color: #ffffff;
+}
+.btn:hover{  
+  background-color: #000000;
+  color: #ffeba7;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
+
+#presentacion{
+text-align:justify;
+    
+}      
+      
+#presentacion-left{
+text-align: left;  
+}
+
+
+
+p{
+  justify-content: center;
+    line-height: 1.5;
+    text-align: justify ;
+  margin-left: 450px;
+    width: 700px;
+    font-size: 17px;
+
+  }
+
+  .fade-out {
+    animation: fadeOut 0.5s forwards;
+  }
+
+  .btn-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    scroll-behavior: smooth;
+  }
+  
+  .arrow-icon {
+    width: 50px;
+    height: 50px;
+    fill: #ffffff;
+    transition: transform 0.5s;
+    
+  }
+  
+  .btn-scroll:hover .arrow-icon {
+    transform: translateY(10px);
+  }
+
+  .btn-scroll2:hover .arrow-icon {
+    transform: translateY(10px);
+  }
+
+#logo1{
+  margin-top: 100px;
+  width: 600px;
+  height: 650px;
+}
+
+.btn-scroll2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 300px;
+  scroll-behavior: smooth;
+}
+
+.contenido{
+  margin-top: 200px;
+}
